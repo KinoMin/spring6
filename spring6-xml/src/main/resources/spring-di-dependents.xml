@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="student" class="com.kino.spring6.bean.Student">
+        <!-- property标签：通过组件类的setXxx()方法给组件对象设置属性 -->
+        <!-- name属性：指定属性名（这个属性名是getXxx()、setXxx()方法定义的，和成员变量无关） -->
+        <!-- value属性：指定属性值 -->
+        <property name="id" value="10"/>
+        <property name="name" value="张三"></property>
+        <property name="age" value="23"></property>
+        <property name="sex" value="男"></property>
+    </bean>
+
+    <bean id="studentTwo" class="com.kino.spring6.bean.Student">
+        <constructor-arg value="10"></constructor-arg>
+        <constructor-arg value="李四"></constructor-arg>
+        <constructor-arg value="33"></constructor-arg>
+        <constructor-arg value="女"></constructor-arg>
+    </bean>
+
+    <bean id="clazz" class="com.kino.spring6.bean.Clazz">
+        <property name="clazzId" value="10"/>
+        <property name="clazzName" value="语文"/>
+    </bean>
+    <bean id="clazzTwo" class="com.kino.spring6.bean.Clazz">
+        <property name="clazzId" value="11"/>
+        <property name="clazzName" value="数学"/>
+    </bean>
+    <bean id="teacher" class="com.kino.spring6.bean.Teacher">
+        <property name="id" value="10"/>
+        <property name="name" value="张三"/>
+        <property name="clazz" ref="clazz"/>
+        <property name="hobbies">
+            <array>
+                <value>抽烟</value>
+                <value>喝酒</value>
+                <value>烫头</value>
+            </array>
+        </property>
+        <property name="students">
+            <list>
+                <ref bean="student"/>
+                <ref bean="studentTwo"/>
+            </list>
+        </property>
+        <property name="clazzMap">
+            <map>
+                <entry>
+                    <key>
+                        <value>早课</value>
+                    </key>
+                    <ref bean="clazz"/>
+                </entry>
+                <entry>
+                    <key>
+                        <value>晚课</value>
+                    </key>
+                    <ref bean="clazzTwo"/>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    
+    <!-- 第二种写法 -->
+    <bean id="teacher2" class="com.kino.spring6.bean.Teacher">
+        <property name="id" value="10"/>
+        <property name="name" value="张三"/>
+        <property name="clazz">
+            <!-- 在一个bean中再声明一个bean就是内部bean -->
+            <!-- 内部bean只能用于给属性赋值，不能在外部通过IOC容器获取，因此可以省略id属性 -->
+            <bean class="com.kino.spring6.bean.Clazz">
+                <property name="clazzId" value="10"/>
+                <property name="clazzName" value="语文"/>
+            </bean>
+        </property>
+        <property name="hobbies">
+            <array>
+                <value>抽烟</value>
+                <value>喝酒</value>
+                <value>烫头</value>
+            </array>
+        </property>
+        <property name="students">
+            <list>
+                <ref bean="student"/>
+                <ref bean="studentTwo"/>
+            </list>
+        </property>
+        <property name="clazzMap">
+            <map>
+                <entry>
+                    <key>
+                        <value>早课</value>
+                    </key>
+                    <ref bean="clazz"/>
+                </entry>
+                <entry>
+                    <key>
+                        <value>晚课</value>
+                    </key>
+                    <ref bean="clazzTwo"/>
+                </entry>
+            </map>
+        </property>
+    </bean>
+</beans>
