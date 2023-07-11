@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96d5e2fe-e54b-430a-9718-7de46a85a220" name="Changes" comment="" />
+    <list default="true" id="96d5e2fe-e54b-430a-9718-7de46a85a220" name="Changes" comment="xml的方式管理bean">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,20 +57,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.DruidDataSourceTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kino.spring6.Main" />
-      <module name="spring6-xml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kino.spring6.bean.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.BeanLife.test">
     <configuration name="BeanDependentsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring6-xml" />
       <extension name="coverage">
@@ -79,6 +68,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.kino.spring6" />
       <option name="MAIN_CLASS_NAME" value="com.kino.spring6.BeanDependentsTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeanLife.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-xml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kino.spring6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kino.spring6" />
+      <option name="MAIN_CLASS_NAME" value="com.kino.spring6.BeanLife" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -134,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BeanLife.test" />
         <item itemvalue="JUnit.DruidDataSourceTest" />
         <item itemvalue="JUnit.BeanDependentsTest.test" />
         <item itemvalue="JUnit.StudentTest.test" />
         <item itemvalue="JUnit.HelloWorldTest.test" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -151,12 +156,24 @@
       <option name="presentableId" value="Default" />
       <updated>1689066565015</updated>
       <workItem from="1689066566014" duration="4252000" />
-      <workItem from="1689085719261" duration="4369000" />
+      <workItem from="1689085719261" duration="5190000" />
     </task>
+    <task id="LOCAL-00001" summary="xml的方式管理bean">
+      <created>1689091786972</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689091786972</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="xml的方式管理bean" />
+    <option name="LAST_COMMIT_MESSAGE" value="xml的方式管理bean" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
