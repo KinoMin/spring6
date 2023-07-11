@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96d5e2fe-e54b-430a-9718-7de46a85a220" name="Changes" comment="xml的方式管理bean">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="96d5e2fe-e54b-430a-9718-7de46a85a220" name="Changes" comment="bean的生命周期" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -57,7 +55,23 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.BeanLife.test">
+  <component name="RunManager" selected="JUnit.BeanAuto.testAutoWireByXML">
+    <configuration name="BeanAuto.testAutoWireByXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-xml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kino.spring6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kino.spring6" />
+      <option name="MAIN_CLASS_NAME" value="com.kino.spring6.BeanAuto" />
+      <option name="METHOD_NAME" value="testAutoWireByXML" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BeanDependentsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring6-xml" />
       <extension name="coverage">
@@ -105,22 +119,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloWorldTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-xml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kino.spring6.bean.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.kino.spring6" />
-      <option name="MAIN_CLASS_NAME" value="com.kino.spring6.HelloWorldTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StudentTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring6-xml" />
       <extension name="coverage">
@@ -139,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BeanAuto.testAutoWireByXML" />
         <item itemvalue="JUnit.BeanLife.test" />
         <item itemvalue="JUnit.DruidDataSourceTest" />
         <item itemvalue="JUnit.BeanDependentsTest.test" />
         <item itemvalue="JUnit.StudentTest.test" />
-        <item itemvalue="JUnit.HelloWorldTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1689066565015</updated>
       <workItem from="1689066566014" duration="4252000" />
-      <workItem from="1689085719261" duration="5190000" />
+      <workItem from="1689085719261" duration="5523000" />
     </task>
     <task id="LOCAL-00001" summary="xml的方式管理bean">
       <created>1689091786972</created>
@@ -165,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689091786972</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="bean的生命周期">
+      <created>1689092581944</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689092581944</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +178,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="xml的方式管理bean" />
-    <option name="LAST_COMMIT_MESSAGE" value="xml的方式管理bean" />
+    <MESSAGE value="bean的生命周期" />
+    <option name="LAST_COMMIT_MESSAGE" value="bean的生命周期" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
