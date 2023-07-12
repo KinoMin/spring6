@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="96d5e2fe-e54b-430a-9718-7de46a85a220" name="Changes" comment="注解管理bean">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring6-ioc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-ioc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring6-ioc/src/main/java/com/kino/spring6/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +18,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="注解管理bean" />
+        <option name="rewordedMessage" value="注解管理bean" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="32492b9be0be801337de79155a591085bf04c7e2" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -38,34 +52,73 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "jbr-17",
-    "last_opened_file_path": "/Users/kino/works/kino/test/spring6/spring6-annotation/src/main/java/com/kino/spring6/resource",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.28653628",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "spring.configuration.checksum": "317f128702f841934658f936fa7de144",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;jbr-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kino/works/kino/test/spring6/spring6-annotation/src/main/java/com/kino/spring6/resource&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.28653628&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;317f128702f841934658f936fa7de144&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/spring6-annotation/src/main/java/com/kino/spring6/resource" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.testAnnotation">
-    <configuration name="BeanAuto.testAutoWireByXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-xml" />
+  <component name="RunManager" selected="JUnit.Spring6IocTest.testIoc">
+    <configuration name="AnnotationApplicationContext" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kino.spring6.autowired.context.AnnotationApplicationContext" />
+      <module name="spring6-ioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kino.spring6.autowired.context.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Spring6AnnotationApplicationContext" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kino.spring6.autowired.context.Spring6AnnotationApplicationContext" />
+      <module name="spring6-ioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kino.spring6.autowired.context.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.kino.spring6.autowired.context.impl.AnnotationApplicationContext" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kino.spring6.autowired.context.impl.AnnotationApplicationContext" />
+      <module name="spring6-ioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kino.spring6.autowired.context.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Spring6IocTest.testIoc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-ioc" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.kino.spring6.*" />
@@ -73,71 +126,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.kino.spring6" />
-      <option name="MAIN_CLASS_NAME" value="com.kino.spring6.BeanAuto" />
-      <option name="METHOD_NAME" value="testAutoWireByXML" />
+      <option name="MAIN_CLASS_NAME" value="com.kino.spring6.Spring6IocTest" />
+      <option name="METHOD_NAME" value="testIoc" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BeanDependentsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-xml" />
+    <configuration name="TestCar.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-ioc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kino.spring6.*" />
+          <option name="PATTERN" value="com.kino.spring6.reflect.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.kino.spring6" />
-      <option name="MAIN_CLASS_NAME" value="com.kino.spring6.BeanDependentsTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BeanLife.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-xml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kino.spring6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.kino.spring6" />
-      <option name="MAIN_CLASS_NAME" value="com.kino.spring6.BeanLife" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-annotation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kino.spring6.autowired.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.kino.spring6.autowired" />
-      <option name="MAIN_CLASS_NAME" value="com.kino.spring6.autowired.UserTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.testAnnotation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-annotation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kino.spring6.autowired.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.kino.spring6.autowired" />
-      <option name="MAIN_CLASS_NAME" value="com.kino.spring6.autowired.UserTest" />
-      <option name="METHOD_NAME" value="testAnnotation" />
+      <option name="PACKAGE_NAME" value="com.kino.spring6.reflect" />
+      <option name="MAIN_CLASS_NAME" value="com.kino.spring6.reflect.TestCar" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserTest.testAnnotation" />
-        <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.BeanLife.test" />
-        <item itemvalue="JUnit.BeanDependentsTest.test" />
-        <item itemvalue="JUnit.BeanAuto.testAutoWireByXML" />
+        <item itemvalue="JUnit.Spring6IocTest.testIoc" />
+        <item itemvalue="Application.Spring6AnnotationApplicationContext" />
+        <item itemvalue="Application.com.kino.spring6.autowired.context.impl.AnnotationApplicationContext" />
+        <item itemvalue="Application.AnnotationApplicationContext" />
+        <item itemvalue="JUnit.TestCar.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -185,11 +191,36 @@
       <option name="project" value="LOCAL" />
       <updated>1689129366138</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="注解管理bean">
+      <created>1689143971650</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689143971650</updated>
+    </task>
+    <task id="LOCAL-00005" summary="注解管理bean">
+      <created>1689144063465</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689144063465</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="xml的方式管理bean" />
@@ -204,6 +235,11 @@
           <url>jar://$USER_HOME$/software/apache-maven-3.8.3/repository/org/springframework/spring-context/6.0.10/spring-context-6.0.10-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java</url>
           <line>140</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring6-ioc/src/main/java/com/kino/spring6/autowired/context/AnnotationApplicationContext.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
