@@ -5,7 +5,9 @@ import com.kino.spring6.autowired.annotation.Di;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 import java.util.Enumeration;
 import java.util.HashMap;
@@ -67,7 +69,8 @@ public class Spring6AnnotationApplicationContext implements Spring6ApplicationCo
                         if (!clazz.isInterface()) { // 不能对接口做 newInstance 操作
                             Bean annotation = clazz.getAnnotation(Bean.class);
                             if (annotation != null) {
-                                Object instance = clazz.newInstance();
+                                Constructor<?> constructor = clazz.getConstructor(); // 获取无参构造器创建对象
+                                Object instance = constructor.newInstance();
                                 if (clazz.getInterfaces().length > 0) {
                                     beanMap.put(clazz.getInterfaces()[0], instance);
                                 } else {
@@ -75,7 +78,8 @@ public class Spring6AnnotationApplicationContext implements Spring6ApplicationCo
                                 }
                             }
                         }
-                    } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
+                    } catch (ClassNotFoundException | InstantiationException | IllegalAccessException |
+                             NoSuchMethodException | InvocationTargetException e) {
                         throw new RuntimeException(e);
                     }
                 }

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96d5e2fe-e54b-430a-9718-7de46a85a220" name="Changes" comment="注解管理bean">
+    <list default="true" id="96d5e2fe-e54b-430a-9718-7de46a85a220" name="Changes" comment="简单实现ioc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-ioc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-ioc/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-ioc/src/main/java/com/kino/spring6/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +167,7 @@
       <updated>1689066565015</updated>
       <workItem from="1689066566014" duration="4252000" />
       <workItem from="1689085719261" duration="5523000" />
+      <workItem from="1689229337056" duration="1830000" />
     </task>
     <task id="LOCAL-00001" summary="xml的方式管理bean">
       <created>1689091786972</created>
@@ -205,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689144063465</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="简单实现ioc">
+      <created>1689181255493</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689181255493</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +232,8 @@
     <MESSAGE value="xml的方式管理bean" />
     <MESSAGE value="bean的生命周期" />
     <MESSAGE value="注解管理bean" />
-    <option name="LAST_COMMIT_MESSAGE" value="注解管理bean" />
+    <MESSAGE value="简单实现ioc" />
+    <option name="LAST_COMMIT_MESSAGE" value="简单实现ioc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
